@@ -1,0 +1,14 @@
+@keyframes sway {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.animate-sway {
+    animation: sway 4s ease-in-out infinite;
+    transform-origin: top;
+}
