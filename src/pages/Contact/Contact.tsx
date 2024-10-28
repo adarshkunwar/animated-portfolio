@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import { Mail, Phone, Send, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
@@ -10,14 +10,17 @@ const Contact = () => {
   });
   const [status, setStatus] = useState("");
 
-  const handleChange = (e) => {
+  // Updated to handle both input and textarea changes
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
 
@@ -28,6 +31,7 @@ const Contact = () => {
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
+      console.log(error);
       setStatus("error");
     }
   };

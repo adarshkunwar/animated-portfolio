@@ -99,7 +99,6 @@ describe("Contact Component", () => {
     });
 
     it("should require all fields", () => {
-      const form = screen.getByTestId("contact-form");
       const nameInput = screen.getByTestId("name-input");
       const emailInput = screen.getByTestId("email-input");
       const subjectInput = screen.getByTestId("subject-input");
