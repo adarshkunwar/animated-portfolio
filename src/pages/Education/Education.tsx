@@ -3,23 +3,23 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "Indian Institute of Technology",
-      location: "Mumbai, India",
-      duration: "2019 - 2023",
-      gpa: "3.8/4.0",
+      degree: "Bachelor in Cmputer Application",
+      institution: "Tribhuwan University",
+      location: "Nepal",
+      duration: "2020 - present",
+      gpa: "unknown",
       highlights: [
         "Data Structures & Algorithms",
         "Web Development",
-        "Machine Learning",
+        "Computer Networking",
         "Database Management",
       ],
     },
     {
       degree: "Higher Secondary Education",
-      institution: "Delhi Public School",
-      location: "Delhi, India",
-      duration: "2017 - 2019",
+      institution: "Kalika Manavyan Secondary School",
+      location: "Butwal, Nepal",
+      duration: "2018-2020",
       gpa: "95%",
       highlights: ["Computer Science", "Mathematics", "Physics"],
     },

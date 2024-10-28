@@ -56,21 +56,16 @@ const About = () => {
                 Technical Skills
               </h4>
               <div className="flex flex-wrap gap-3" data-testid="skills-list">
-                {[
-                  "React",
-                  "Node.js",
-                  "TypeScript",
-                  "AWS",
-                  "MongoDB",
-                  "Docker",
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                {["React", "Node.js", "TypeScript", "MongoDB", "Docker"].map(
+                  (skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ),
+                )}
               </div>
             </div>
           </div>

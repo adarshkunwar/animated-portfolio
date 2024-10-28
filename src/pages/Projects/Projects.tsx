@@ -3,12 +3,18 @@ import { Github, ExternalLink, Star, GitFork } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "ChatGPT Clone",
+      title: "Reader's haven",
       description:
-        "A real-time chat application built with OpenAI's GPT-3 API, featuring streaming responses, chat history, and code highlighting.",
+        "A book reading app desined for th eusers in which the users can read, add, updates book, and books are recommended to them based on there older reads.",
       image: "/api/placeholder/600/400",
-      technologies: ["React", "Node.js", "OpenAI API", "WebSocket", "Prisma"],
-      liveLink: "https://chatgpt-clone.demo",
+      technologies: [
+        "Next",
+        "Postgres",
+        "Prisma",
+        "Jest",
+        "React testing library",
+      ],
+      liveLink: "https://readershaven.demo",
       githubLink: "https://github.com/username/chatgpt-clone",
       stats: {
         stars: 120,
@@ -16,17 +22,11 @@ const Projects = () => {
       },
     },
     {
-      title: "E-Commerce Dashboard",
+      title: "Porto",
       description:
-        "Full-stack e-commerce admin dashboard with real-time analytics, inventory management, and order processing capabilities.",
+        "A chrome extension that lets you port all your tweets from twitter to bluesky",
       image: "/api/placeholder/600/400",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "MongoDB",
-        "Charts.js",
-      ],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "vite bundler"],
       liveLink: "https://ecommerce-dashboard.demo",
       githubLink: "https://github.com/username/ecommerce-dashboard",
       stats: {
@@ -35,11 +35,11 @@ const Projects = () => {
       },
     },
     {
-      title: "Task Management API",
+      title: "Lopho abroad",
       description:
-        "RESTful API for task management with authentication, role-based access control, and automated testing.",
+        "A website for consultancy services for students who want to study abroad",
       image: "/api/placeholder/600/400",
-      technologies: ["Express.js", "PostgreSQL", "Jest", "Docker", "JWT"],
+      technologies: ["Next", "Express.js", "PostgreSQL", "TypeORM", "Docker"],
       liveLink: "https://task-api.demo",
       githubLink: "https://github.com/username/task-api",
       stats: {
